@@ -5,6 +5,11 @@ plugins {
 	id 'org.graalvm.buildtools.native' version '0.9.28'
 }
 
+springBoot  {
+	buildInfo {
+	}
+}
+
 group = 'com.powdrsoft'
 version = '0.0.1-SNAPSHOT'
 
@@ -28,6 +33,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-neo4j'
 	implementation 'org.springframework.boot:spring-boot-starter-graphql'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.boot:spring-boot-testcontainers'
